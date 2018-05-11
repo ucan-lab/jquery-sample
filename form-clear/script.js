@@ -13,5 +13,7 @@ $(function () {
             .prop("checked", false)
             .prop("selected", false)
         ;
+
+        $(form).find(":radio").eq(0).prop("checked", true);
     }
 });
