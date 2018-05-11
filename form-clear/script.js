@@ -1,9 +1,11 @@
 "use strict";
 
 $(function () {
-    $(".clear-button").on("click", clearForm(this.form));
+    $(".clear-button").on("click", function () {
+        clearForm(this.form);
+    });
 
-    var clearForm = function (form) {
+    function clearForm (form) {
         $(form)
             .find("input, select, textarea")
             .not(":button, :submit, :reset, :hidden")
