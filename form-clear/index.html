@@ -6,183 +6,195 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>クリアボタンサンプル</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="../footer.css">
 </head>
-<body>
-<section class="hero">
-    <div class="hero-body">
-        <div class="container">
-            <h1 class="title">
-                 クリアボタンサンプル
-            </h1>
-        </div>
-    </div>
-</section>
-<div class="container">
-    <form action="#" method="POST">
-
-        <div class="field">
-            <label class="label">Name</label>
-            <div class="control">
-                <input name="name" class="input" type="text" value="内田 真礼">
+<body class="Site">
+<header>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    クリアボタンサンプル
+                </h1>
             </div>
         </div>
+    </section>
+</header>
+<main class="Site-content">
+    <div class="container">
+        <form action="#" method="POST">
 
-        <div class="field">
-            <label class="label">Password</label>
-            <div class="control">
-                <input name="password" class="input" type="password" value="">
-            </div>
-        </div>
-
-        <div class="field">
-            <label class="label">Age</label>
-            <div class="control">
-                <input name="age" class="input" type="number" value="28">
-            </div>
-        </div>
-
-        <div class="field">
-            <label class="label">Sex</label>
-            <div class="control">
-                <label class="radio">
-                    <input name="sex" type="radio" value="0" data-default> 指定しない
-                </label>
-                <label class="radio">
-                    <input name="sex" type="radio" value="1"> 男
-                </label>
-                <label class="radio">
-                    <input name="sex" type="radio" value="2" checked> 女
-                </label>
-            </div>
-        </div>
-
-        <div class="field">
-            <label class="label">Sweets</label>
-            <div class="control">
-                <label class="radio">
-                    <input name="sweets" type="radio" value="0" data-default> 指定しない
-                </label>
-                <label class="radio">
-                    <input name="sweets" type="radio" value="1"> きのこの山
-                </label>
-                <label class="radio">
-                    <input name="sweets" type="radio" value="2" checked> たけのこの里
-                </label>
-            </div>
-        </div>
-
-        <div class="field">
-            <label class="label">Hobby</label>
-            <div class="control">
-                <label class="checkbox">
-                    <input name="hobby[]" type="checkbox" checked> ゲーム
-                </label>
-                <label class="checkbox">
-                    <input name="hobby[]" type="checkbox"> プログラミング
-                </label>
-                <label class="checkbox">
-                    <input name="hobby[]" type="checkbox"> 映画鑑賞
-                </label>
-                <label class="checkbox">
-                    <input name="hobby[]" type="checkbox" checked> 野球観戦
-                </label>
-                <label class="checkbox">
-                    <input name="hobby[]" type="checkbox"> お菓子作り
-                </label>
-                <label class="checkbox">
-                    <input name="hobby[]" type="checkbox"> 読書
-                </label>
-            </div>
-        </div>
-
-        <div class="field">
-            <label class="label">Email</label>
-            <div class="control">
-                <input name="email" class="input" type="email" value="maaya@example.com">
-            </div>
-        </div>
-
-        <div class="field">
-            <label class="label">Address</label>
-            <div class="control">
-                <div class="select">
-                    <select name="prefecture">
-                        <option value="">選択してください</option>
-                        <option value="1">北海道</option>
-                        <option value="2">青森県</option>
-                        <option value="3">岩手県</option>
-                        <option value="4">宮城県</option>
-                        <option value="5">秋田県</option>
-                        <option value="6">山形県</option>
-                        <option value="7">福島県</option>
-                        <option value="8">茨城県</option>
-                        <option value="9">栃木県</option>
-                        <option value="10">群馬県</option>
-                        <option value="11">埼玉県</option>
-                        <option value="12">千葉県</option>
-                        <option value="13" selected>東京都</option>
-                        <option value="14">神奈川県</option>
-                        <option value="15">新潟県</option>
-                        <option value="16">富山県</option>
-                        <option value="17">石川県</option>
-                        <option value="18">福井県</option>
-                        <option value="19">山梨県</option>
-                        <option value="20">長野県</option>
-                        <option value="21">岐阜県</option>
-                        <option value="22">静岡県</option>
-                        <option value="23">愛知県</option>
-                        <option value="24">三重県</option>
-                        <option value="25">滋賀県</option>
-                        <option value="26">京都府</option>
-                        <option value="27">大阪府</option>
-                        <option value="28">兵庫県</option>
-                        <option value="29">奈良県</option>
-                        <option value="30">和歌山県</option>
-                        <option value="31">鳥取県</option>
-                        <option value="32">島根県</option>
-                        <option value="33">岡山県</option>
-                        <option value="34">広島県</option>
-                        <option value="35">山口県</option>
-                        <option value="36">徳島県</option>
-                        <option value="37">香川県</option>
-                        <option value="38">愛媛県</option>
-                        <option value="39">高知県</option>
-                        <option value="40">福岡県</option>
-                        <option value="41">佐賀県</option>
-                        <option value="42">長崎県</option>
-                        <option value="43">熊本県</option>
-                        <option value="44">大分県</option>
-                        <option value="45">宮崎県</option>
-                        <option value="46">鹿児島県</option>
-                        <option value="47">沖縄県</option>
-                    </select>
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                    <input name="name" class="input" type="text" value="内田 真礼">
                 </div>
             </div>
-        </div>
 
-        <div class="field">
-            <label class="label">Message</label>
-            <div class="control">
-                <textarea name="message" class="textarea">爆ぜろリアル！ 弾けろシナプス！ Van!shment Th!s World！</textarea>
+            <div class="field">
+                <label class="label">Password</label>
+                <div class="control">
+                    <input name="password" class="input" type="password" value="">
+                </div>
             </div>
-        </div>
 
-        <input name="hidden" type="hidden" value="この要素はクリアされないよ！">
+            <div class="field">
+                <label class="label">Age</label>
+                <div class="control">
+                    <input name="age" class="input" type="number" value="28">
+                </div>
+            </div>
 
-        <div class="field is-grouped">
-            <div class="control">
-                <button name="action" value="send" type="submit" class="button is-link">送信</button>
+            <div class="field">
+                <label class="label">Sex</label>
+                <div class="control">
+                    <label class="radio">
+                        <input name="sex" type="radio" value="0" data-default> 指定しない
+                    </label>
+                    <label class="radio">
+                        <input name="sex" type="radio" value="1"> 男
+                    </label>
+                    <label class="radio">
+                        <input name="sex" type="radio" value="2" checked> 女
+                    </label>
+                </div>
             </div>
-            <div class="control">
-                <button name="action" value="clear" type="button" class="button clear-button">クリア</button>
+
+            <div class="field">
+                <label class="label">Sweets</label>
+                <div class="control">
+                    <label class="radio">
+                        <input name="sweets" type="radio" value="1"> きのこの山
+                    </label>
+                    <label class="radio">
+                        <input name="sweets" type="radio" value="2" checked> たけのこの里
+                    </label>
+                </div>
             </div>
-            <div class="control">
-                <input name="reset" type="reset" class="button is-light" value="リセット">
-                <p class="help">通常のリセットボタン</p>
+
+            <div class="field">
+                <label class="label">Hobby</label>
+                <div class="control">
+                    <label class="checkbox">
+                        <input name="hobby[]" type="checkbox" checked> ゲーム
+                    </label>
+                    <label class="checkbox">
+                        <input name="hobby[]" type="checkbox"> プログラミング
+                    </label>
+                    <label class="checkbox">
+                        <input name="hobby[]" type="checkbox"> 映画鑑賞
+                    </label>
+                    <label class="checkbox">
+                        <input name="hobby[]" type="checkbox" checked> 野球観戦
+                    </label>
+                    <label class="checkbox">
+                        <input name="hobby[]" type="checkbox"> お菓子作り
+                    </label>
+                    <label class="checkbox">
+                        <input name="hobby[]" type="checkbox"> 読書
+                    </label>
+                </div>
             </div>
+
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input name="email" class="input" type="email" value="maaya@example.com">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Address</label>
+                <div class="control">
+                    <div class="select">
+                        <select name="prefecture">
+                            <option value="">選択してください</option>
+                            <option value="1">北海道</option>
+                            <option value="2">青森県</option>
+                            <option value="3">岩手県</option>
+                            <option value="4">宮城県</option>
+                            <option value="5">秋田県</option>
+                            <option value="6">山形県</option>
+                            <option value="7">福島県</option>
+                            <option value="8">茨城県</option>
+                            <option value="9">栃木県</option>
+                            <option value="10">群馬県</option>
+                            <option value="11">埼玉県</option>
+                            <option value="12">千葉県</option>
+                            <option value="13" selected>東京都</option>
+                            <option value="14">神奈川県</option>
+                            <option value="15">新潟県</option>
+                            <option value="16">富山県</option>
+                            <option value="17">石川県</option>
+                            <option value="18">福井県</option>
+                            <option value="19">山梨県</option>
+                            <option value="20">長野県</option>
+                            <option value="21">岐阜県</option>
+                            <option value="22">静岡県</option>
+                            <option value="23">愛知県</option>
+                            <option value="24">三重県</option>
+                            <option value="25">滋賀県</option>
+                            <option value="26">京都府</option>
+                            <option value="27">大阪府</option>
+                            <option value="28">兵庫県</option>
+                            <option value="29">奈良県</option>
+                            <option value="30">和歌山県</option>
+                            <option value="31">鳥取県</option>
+                            <option value="32">島根県</option>
+                            <option value="33">岡山県</option>
+                            <option value="34">広島県</option>
+                            <option value="35">山口県</option>
+                            <option value="36">徳島県</option>
+                            <option value="37">香川県</option>
+                            <option value="38">愛媛県</option>
+                            <option value="39">高知県</option>
+                            <option value="40">福岡県</option>
+                            <option value="41">佐賀県</option>
+                            <option value="42">長崎県</option>
+                            <option value="43">熊本県</option>
+                            <option value="44">大分県</option>
+                            <option value="45">宮崎県</option>
+                            <option value="46">鹿児島県</option>
+                            <option value="47">沖縄県</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                    <textarea name="message" class="textarea">爆ぜろリアル！ 弾けろシナプス！ Van!shment Th!s World！</textarea>
+                </div>
+            </div>
+
+            <input name="hidden" type="hidden" value="この要素はクリアされないよ！">
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button name="action" value="send" type="submit" class="button is-link">送信</button>
+                </div>
+                <div class="control">
+                    <button name="action" value="clear" type="button" class="button clear-button">クリア</button>
+                </div>
+                <div class="control">
+                    <input name="reset" type="reset" class="button is-light" value="リセット">
+                    <p class="help">通常のリセットボタン</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <strong>jquery-sample</strong> by
+                <a class="fab fa-github-square" href="https://github.com/ucan-lab/jquery-sample">ucan-lab</a>
+            </p>
         </div>
-    </form>
-</div>
+    </div>
+</footer>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
