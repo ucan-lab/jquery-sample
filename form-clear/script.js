@@ -14,6 +14,6 @@ $(function () {
             .prop("selected", false)
         ;
 
-        $(form).find(":radio").eq(0).prop("checked", true);
+        $(form).find(":radio").filter('[data-default]').prop("checked", true);
     }
 });

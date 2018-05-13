@@ -28,6 +28,13 @@
         </div>
 
         <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+                <input name="password" class="input" type="password" value="">
+            </div>
+        </div>
+
+        <div class="field">
             <label class="label">Age</label>
             <div class="control">
                 <input name="age" class="input" type="number" value="28">
@@ -38,13 +45,28 @@
             <label class="label">Sex</label>
             <div class="control">
                 <label class="radio">
-                    <input name="sex" type="radio" name="sex" value="0"> 指定しない
+                    <input name="sex" type="radio" value="0" data-default> 指定しない
                 </label>
                 <label class="radio">
-                    <input name="sex" type="radio" name="sex" value="1"> 男
+                    <input name="sex" type="radio" value="1"> 男
                 </label>
                 <label class="radio">
-                    <input name="sex" type="radio" name="sex" value="2" checked> 女
+                    <input name="sex" type="radio" value="2" checked> 女
+                </label>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Sweets</label>
+            <div class="control">
+                <label class="radio">
+                    <input name="sweets" type="radio" value="0" data-default> 指定しない
+                </label>
+                <label class="radio">
+                    <input name="sweets" type="radio" value="1"> きのこの山
+                </label>
+                <label class="radio">
+                    <input name="sweets" type="radio" value="2" checked> たけのこの里
                 </label>
             </div>
         </div>
