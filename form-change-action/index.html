@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>jQueryサンプル置き場</title>
+    <title>フォーム送信先変更ボタンサンプル</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="../footer.css">
 </head>
 <body class="Site">
+
 <header>
     <section class="hero">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
-                    jQueryサンプル置き場
+                    フォーム送信先変更ボタンサンプル
                 </h1>
             </div>
         </div>
@@ -23,19 +23,11 @@
 </header>
 <main class="Site-content">
     <div class="container">
-        <div class="content">
-            <ul>
-                <li>
-                    <a href="form-clear/index.html">フォームクリアするボタン</a>
-                </li>
-                <li>
-                    <a href="form-change-action/index.html">フォーム送信先変更ボタンサンプル</a>
-                </li>
-                <li>
-                    <a href="scroll/index.html">スクロールして特定の位置で画像を順番にフェードイン</a>
-                </li>
-            </ul>
-        </div>
+        <form>
+            <button type="submit" class="change-action button is-primary" data-action="/" data-method="GET">一覧へ</button>
+            <button type="submit" class="change-action button is-info" data-action="/images" data-method="POST" data-enctype="multipart/form-data">ファイルアップロード</button>
+            <button type="submit" class="change-action button is-danger" data-action="/images/1" data-method="DELETE">画像削除</button>
+        </form>
     </div>
 </main>
 <footer class="footer">
@@ -48,5 +40,8 @@
         </div>
     </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
