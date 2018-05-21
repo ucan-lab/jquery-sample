@@ -4,34 +4,42 @@ $(function () {
     /**
      * ボタンのdata属性からフォーム属性を変更
      */
-    $('.change-action').click(function (e) {
+    $(".change-action").click(function (event) {
+        // デフォルトアクションを抑止
+        event.preventDefault();
+
+        let form = $(this).parents("form");
+
         // action
-        if ($(this).data('action')) {
-            $(this).parents('form').attr('action', $(this).data('action'));
+        if ($(this).data("action")) {
+            form.attr("action", $(this).data("action"));
         }
 
         // method
-        if ($(this).data('method')) {
-            if ($.inArray($(this).data('method'), ['GET', 'POST']) == -1) {
+        if ($(this).data("method")) {
+            if ($.inArray($(this).data("method"), ["GET", "POST"]) == -1) {
                 // PUT, DELETE
-                var element = $('<input />', { type: 'hidden', name: '_method', value: $(this).data('method') });
-                $(this).parents('form').append(element);
-                $(this).parents('form').attr('method', 'POST');
+                var element = $("<input />", { type: "hidden", name: "_method", value: $(this).data("method") });
+                form.append(element);
+                form.attr("method", "POST");
             } else {
                 // GET, POST
-                $(this).parents('form').attr('method', $(this).data('method'));
+                form.attr("method", $(this).data("method"));
             }
         }
 
         // enctype
-        if ($(this).data('enctype')) {
-            $(this).parents('form').attr('enctype', $(this).data('enctype'));
+        if ($(this).data("enctype")) {
+            form.attr("enctype", $(this).data("enctype"));
         }
 
         // debug用
-        e.preventDefault();
-        console.log($(this).parents('form').attr('action'));
-        console.log($(this).parents('form').attr('method'));
-        console.log($(this).parents('form').attr('enctype'));
+        console.log(form.attr("action"));
+        console.log(form.attr("method"));
+        console.log($("[name=_method]").val());
+        console.log(form.attr("enctype"));
+
+        // submit
+        // form.submit();
     });
 });

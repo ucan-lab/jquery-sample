@@ -24,7 +24,8 @@
 <main class="Site-content">
     <div class="container">
         <form>
-            <button type="submit" class="change-action button is-primary" data-action="/" data-method="GET">一覧へ</button>
+            <button type="submit" class="change-action button is-link" data-action="/" data-method="GET">一覧へ</button>
+            <a href="javascript:void(0)" class="change-action button is-primary" data-action="/update/1" data-method="PUT">更新</a>
             <button type="submit" class="change-action button is-info" data-action="/images" data-method="POST" data-enctype="multipart/form-data">ファイルアップロード</button>
             <button type="submit" class="change-action button is-danger" data-action="/images/1" data-method="DELETE">画像削除</button>
         </form>
