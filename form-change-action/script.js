@@ -4,7 +4,7 @@ $(function () {
     /**
      * ボタンのdata属性からフォーム属性を変更
      */
-    $(".change-action").click(function (event) {
+    $(".change-action").on("click", function (event) {
         // デフォルトアクションを抑止
         event.preventDefault();
 
